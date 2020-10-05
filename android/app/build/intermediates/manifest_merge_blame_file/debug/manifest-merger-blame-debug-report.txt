@@ -1,0 +1,210 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.poope"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="29" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->C:\Users\mikee\Documents\GitHub\poope-mobile\android\app\src\debug\AndroidManifest.xml:5:5-77
+11-->C:\Users\mikee\Documents\GitHub\poope-mobile\android\app\src\debug\AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\mikee\Documents\GitHub\poope-mobile\android\app\src\main\AndroidManifest.xml:4:5-67
+12-->C:\Users\mikee\Documents\GitHub\poope-mobile\android\app\src\main\AndroidManifest.xml:4:22-64
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->[com.facebook.flipper:flipper:0.54.0] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\1c7787ec82631e0394972c76bdabe608\flipper-0.54.0\AndroidManifest.xml:16:5-76
+13-->[com.facebook.flipper:flipper:0.54.0] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\1c7787ec82631e0394972c76bdabe608\flipper-0.54.0\AndroidManifest.xml:16:22-73
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->[:react-native-firebase_functions] C:\Users\mikee\Documents\GitHub\poope-mobile\node_modules\@react-native-firebase\functions\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-79
+14-->[:react-native-firebase_functions] C:\Users\mikee\Documents\GitHub\poope-mobile\node_modules\@react-native-firebase\functions\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-76
+15    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+15-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\645faa49e847b408cd23ad4984630509\firebase-iid-20.0.1\AndroidManifest.xml:24:5-68
+15-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\645faa49e847b408cd23ad4984630509\firebase-iid-20.0.1\AndroidManifest.xml:24:22-65
+16    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+16-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\645faa49e847b408cd23ad4984630509\firebase-iid-20.0.1\AndroidManifest.xml:26:5-82
+16-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\645faa49e847b408cd23ad4984630509\firebase-iid-20.0.1\AndroidManifest.xml:26:22-79
+17    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+17-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\f5f67d58e43684da7718fed02d89960e\play-services-measurement-17.4.4\AndroidManifest.xml:26:5-110
+17-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\f5f67d58e43684da7718fed02d89960e\play-services-measurement-17.4.4\AndroidManifest.xml:26:22-107
+18
+19    <application
+19-->C:\Users\mikee\Documents\GitHub\poope-mobile\android\app\src\main\AndroidManifest.xml:6:5-25:19
+20        android:name="com.poope.MainApplication"
+20-->C:\Users\mikee\Documents\GitHub\poope-mobile\android\app\src\main\AndroidManifest.xml:7:7-38
+21        android:allowBackup="false"
+21-->C:\Users\mikee\Documents\GitHub\poope-mobile\android\app\src\main\AndroidManifest.xml:11:7-34
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.1.0] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\639e914bfc1efa21e36199d3ff2c5eef\core-1.1.0\AndroidManifest.xml:24:18-86
+23        android:debuggable="true"
+24        android:icon="@mipmap/ic_launcher"
+24-->C:\Users\mikee\Documents\GitHub\poope-mobile\android\app\src\main\AndroidManifest.xml:9:7-41
+25        android:label="@string/app_name"
+25-->C:\Users\mikee\Documents\GitHub\poope-mobile\android\app\src\main\AndroidManifest.xml:8:7-39
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->C:\Users\mikee\Documents\GitHub\poope-mobile\android\app\src\main\AndroidManifest.xml:10:7-52
+27        android:testOnly="true"
+28        android:theme="@style/AppTheme"
+28-->C:\Users\mikee\Documents\GitHub\poope-mobile\android\app\src\main\AndroidManifest.xml:12:7-38
+29        android:usesCleartextTraffic="true" >
+29-->C:\Users\mikee\Documents\GitHub\poope-mobile\android\app\src\debug\AndroidManifest.xml:7:18-53
+30        <activity
+30-->C:\Users\mikee\Documents\GitHub\poope-mobile\android\app\src\main\AndroidManifest.xml:13:7-23:18
+31            android:name="com.poope.MainActivity"
+31-->C:\Users\mikee\Documents\GitHub\poope-mobile\android\app\src\main\AndroidManifest.xml:14:9-37
+32            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+32-->C:\Users\mikee\Documents\GitHub\poope-mobile\android\app\src\main\AndroidManifest.xml:16:9-86
+33            android:label="@string/app_name"
+33-->C:\Users\mikee\Documents\GitHub\poope-mobile\android\app\src\main\AndroidManifest.xml:15:9-41
+34            android:launchMode="singleTask"
+34-->C:\Users\mikee\Documents\GitHub\poope-mobile\android\app\src\main\AndroidManifest.xml:17:9-40
+35            android:windowSoftInputMode="adjustResize" >
+35-->C:\Users\mikee\Documents\GitHub\poope-mobile\android\app\src\main\AndroidManifest.xml:18:9-51
+36            <intent-filter>
+36-->C:\Users\mikee\Documents\GitHub\poope-mobile\android\app\src\main\AndroidManifest.xml:19:9-22:25
+37                <action android:name="android.intent.action.MAIN" />
+37-->C:\Users\mikee\Documents\GitHub\poope-mobile\android\app\src\main\AndroidManifest.xml:20:13-65
+37-->C:\Users\mikee\Documents\GitHub\poope-mobile\android\app\src\main\AndroidManifest.xml:20:21-62
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->C:\Users\mikee\Documents\GitHub\poope-mobile\android\app\src\main\AndroidManifest.xml:21:13-73
+39-->C:\Users\mikee\Documents\GitHub\poope-mobile\android\app\src\main\AndroidManifest.xml:21:23-70
+40            </intent-filter>
+41        </activity>
+42        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+42-->C:\Users\mikee\Documents\GitHub\poope-mobile\android\app\src\main\AndroidManifest.xml:24:7-84
+42-->C:\Users\mikee\Documents\GitHub\poope-mobile\android\app\src\main\AndroidManifest.xml:24:17-81
+43
+44        <service
+44-->[com.google.firebase:firebase-functions:19.0.2] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\57e0dd51296dfbf468c5ff9a2eb8fab8\jetified-firebase-functions-19.0.2\AndroidManifest.xml:15:9-21:19
+45            android:name="com.google.firebase.components.ComponentDiscoveryService"
+45-->[com.google.firebase:firebase-functions:19.0.2] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\57e0dd51296dfbf468c5ff9a2eb8fab8\jetified-firebase-functions-19.0.2\AndroidManifest.xml:16:13-84
+46            android:directBootAware="true"
+46-->[com.google.firebase:firebase-common:19.3.0] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\0c5eab6cd53556fc7b27b21719a5cb78\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+47            android:exported="false" >
+47-->[com.google.firebase:firebase-functions:19.0.2] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\57e0dd51296dfbf468c5ff9a2eb8fab8\jetified-firebase-functions-19.0.2\AndroidManifest.xml:17:13-37
+48            <meta-data
+48-->[com.google.firebase:firebase-functions:19.0.2] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\57e0dd51296dfbf468c5ff9a2eb8fab8\jetified-firebase-functions-19.0.2\AndroidManifest.xml:18:13-20:85
+49                android:name="com.google.firebase.components:com.google.firebase.functions.FunctionsRegistrar"
+49-->[com.google.firebase:firebase-functions:19.0.2] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\57e0dd51296dfbf468c5ff9a2eb8fab8\jetified-firebase-functions-19.0.2\AndroidManifest.xml:19:17-111
+50                android:value="com.google.firebase.components.ComponentRegistrar" />
+50-->[com.google.firebase:firebase-functions:19.0.2] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\57e0dd51296dfbf468c5ff9a2eb8fab8\jetified-firebase-functions-19.0.2\AndroidManifest.xml:20:17-82
+51            <meta-data
+51-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\645faa49e847b408cd23ad4984630509\firebase-iid-20.0.1\AndroidManifest.xml:32:13-34:85
+52                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+52-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\645faa49e847b408cd23ad4984630509\firebase-iid-20.0.1\AndroidManifest.xml:33:17-96
+53                android:value="com.google.firebase.components.ComponentRegistrar" />
+53-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\645faa49e847b408cd23ad4984630509\firebase-iid-20.0.1\AndroidManifest.xml:34:17-82
+54            <meta-data
+54-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\29dd5a2e4b5405c769f90c63908e2da9\play-services-measurement-api-17.4.4\AndroidManifest.xml:30:13-32:85
+55                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+55-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\29dd5a2e4b5405c769f90c63908e2da9\play-services-measurement-api-17.4.4\AndroidManifest.xml:31:17-139
+56                android:value="com.google.firebase.components.ComponentRegistrar" />
+56-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\29dd5a2e4b5405c769f90c63908e2da9\play-services-measurement-api-17.4.4\AndroidManifest.xml:32:17-82
+57            <meta-data
+57-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\9eb2499f9148ed63f4298063a5ece213\firebase-installations-16.3.2\AndroidManifest.xml:17:13-19:85
+58                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+58-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\9eb2499f9148ed63f4298063a5ece213\firebase-installations-16.3.2\AndroidManifest.xml:18:17-127
+59                android:value="com.google.firebase.components.ComponentRegistrar" />
+59-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\9eb2499f9148ed63f4298063a5ece213\firebase-installations-16.3.2\AndroidManifest.xml:19:17-82
+60        </service>
+61
+62        <activity
+62-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\4c7b7c4b8cf353fd44783f179fc71f81\jetified-play-services-auth-16.0.1\AndroidManifest.xml:23:9-27:75
+63            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+63-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\4c7b7c4b8cf353fd44783f179fc71f81\jetified-play-services-auth-16.0.1\AndroidManifest.xml:24:13-93
+64            android:excludeFromRecents="true"
+64-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\4c7b7c4b8cf353fd44783f179fc71f81\jetified-play-services-auth-16.0.1\AndroidManifest.xml:25:13-46
+65            android:exported="false"
+65-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\4c7b7c4b8cf353fd44783f179fc71f81\jetified-play-services-auth-16.0.1\AndroidManifest.xml:26:13-37
+66            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+66-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\4c7b7c4b8cf353fd44783f179fc71f81\jetified-play-services-auth-16.0.1\AndroidManifest.xml:27:13-72
+67        <!--
+68            Service handling Google Sign-In user revocation. For apps that do not integrate with
+69            Google Sign-In, this service will never be started.
+70        -->
+71        <service
+71-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\4c7b7c4b8cf353fd44783f179fc71f81\jetified-play-services-auth-16.0.1\AndroidManifest.xml:33:9-36:110
+72            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+72-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\4c7b7c4b8cf353fd44783f179fc71f81\jetified-play-services-auth-16.0.1\AndroidManifest.xml:34:13-89
+73            android:exported="true"
+73-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\4c7b7c4b8cf353fd44783f179fc71f81\jetified-play-services-auth-16.0.1\AndroidManifest.xml:35:13-36
+74            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+74-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\4c7b7c4b8cf353fd44783f179fc71f81\jetified-play-services-auth-16.0.1\AndroidManifest.xml:36:13-107
+75
+76        <receiver
+76-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\645faa49e847b408cd23ad4984630509\firebase-iid-20.0.1\AndroidManifest.xml:37:9-44:20
+77            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+77-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\645faa49e847b408cd23ad4984630509\firebase-iid-20.0.1\AndroidManifest.xml:38:13-78
+78            android:exported="true"
+78-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\645faa49e847b408cd23ad4984630509\firebase-iid-20.0.1\AndroidManifest.xml:39:13-36
+79            android:permission="com.google.android.c2dm.permission.SEND" >
+79-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\645faa49e847b408cd23ad4984630509\firebase-iid-20.0.1\AndroidManifest.xml:40:13-73
+80            <intent-filter>
+80-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\645faa49e847b408cd23ad4984630509\firebase-iid-20.0.1\AndroidManifest.xml:41:13-43:29
+81                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+81-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\645faa49e847b408cd23ad4984630509\firebase-iid-20.0.1\AndroidManifest.xml:42:17-81
+81-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\645faa49e847b408cd23ad4984630509\firebase-iid-20.0.1\AndroidManifest.xml:42:25-78
+82            </intent-filter>
+83        </receiver>
+84
+85        <activity
+85-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\fc8046cb9a5df9499609a5f7f8270b1b\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+86            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+86-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\fc8046cb9a5df9499609a5f7f8270b1b\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+87            android:exported="false"
+87-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\fc8046cb9a5df9499609a5f7f8270b1b\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+88            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+88-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\fc8046cb9a5df9499609a5f7f8270b1b\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+89
+90        <provider
+90-->[com.google.firebase:firebase-common:19.3.0] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\0c5eab6cd53556fc7b27b21719a5cb78\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+91            android:name="com.google.firebase.provider.FirebaseInitProvider"
+91-->[com.google.firebase:firebase-common:19.3.0] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\0c5eab6cd53556fc7b27b21719a5cb78\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+92            android:authorities="com.poope.firebaseinitprovider"
+92-->[com.google.firebase:firebase-common:19.3.0] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\0c5eab6cd53556fc7b27b21719a5cb78\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+93            android:exported="false"
+93-->[com.google.firebase:firebase-common:19.3.0] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\0c5eab6cd53556fc7b27b21719a5cb78\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+94            android:initOrder="100" />
+94-->[com.google.firebase:firebase-common:19.3.0] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\0c5eab6cd53556fc7b27b21719a5cb78\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+95
+96        <receiver
+96-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\f5f67d58e43684da7718fed02d89960e\play-services-measurement-17.4.4\AndroidManifest.xml:29:9-33:20
+97            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+97-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\f5f67d58e43684da7718fed02d89960e\play-services-measurement-17.4.4\AndroidManifest.xml:30:13-85
+98            android:enabled="true"
+98-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\f5f67d58e43684da7718fed02d89960e\play-services-measurement-17.4.4\AndroidManifest.xml:31:13-35
+99            android:exported="false" >
+99-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\f5f67d58e43684da7718fed02d89960e\play-services-measurement-17.4.4\AndroidManifest.xml:32:13-37
+100        </receiver>
+101
+102        <service
+102-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\f5f67d58e43684da7718fed02d89960e\play-services-measurement-17.4.4\AndroidManifest.xml:35:9-38:40
+103            android:name="com.google.android.gms.measurement.AppMeasurementService"
+103-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\f5f67d58e43684da7718fed02d89960e\play-services-measurement-17.4.4\AndroidManifest.xml:36:13-84
+104            android:enabled="true"
+104-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\f5f67d58e43684da7718fed02d89960e\play-services-measurement-17.4.4\AndroidManifest.xml:37:13-35
+105            android:exported="false" />
+105-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\f5f67d58e43684da7718fed02d89960e\play-services-measurement-17.4.4\AndroidManifest.xml:38:13-37
+106        <service
+106-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\f5f67d58e43684da7718fed02d89960e\play-services-measurement-17.4.4\AndroidManifest.xml:39:9-43:72
+107            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+107-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\f5f67d58e43684da7718fed02d89960e\play-services-measurement-17.4.4\AndroidManifest.xml:40:13-87
+108            android:enabled="true"
+108-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\f5f67d58e43684da7718fed02d89960e\play-services-measurement-17.4.4\AndroidManifest.xml:41:13-35
+109            android:exported="false"
+109-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\f5f67d58e43684da7718fed02d89960e\play-services-measurement-17.4.4\AndroidManifest.xml:42:13-37
+110            android:permission="android.permission.BIND_JOB_SERVICE" />
+110-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\f5f67d58e43684da7718fed02d89960e\play-services-measurement-17.4.4\AndroidManifest.xml:43:13-69
+111
+112        <meta-data
+112-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\00ec3959f786139f5967226533af507c\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+113            android:name="com.google.android.gms.version"
+113-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\00ec3959f786139f5967226533af507c\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+114            android:value="@integer/google_play_services_version" />
+114-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\mikee\.gradle\caches\transforms-2\files-2.1\00ec3959f786139f5967226533af507c\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+115    </application>
+116
+117</manifest>
