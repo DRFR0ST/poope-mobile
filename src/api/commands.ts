@@ -22,7 +22,7 @@ export class UserList extends FireCommand<IUser[]> {
 
     parse(status: number, data: any) {
         if (status !== 200) return data;
-
+        
         return data;
     }
 }

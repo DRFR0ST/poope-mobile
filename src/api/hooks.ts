@@ -6,25 +6,27 @@ import config from '../../config';
 const HOST_URL = config.host_url;
 const cli = new FireClient(HOST_URL);
 
-export const useCommand = (command: any, ...args: any[]) => {
-    const ref = useRef(null as unknown as { status: number, data?: any, message?: string });
+type CommandReturn<T = any> = { status: number, data?: T, message?: string, _refresh: () => void };
+export const useCommand = <T>(command: any, ...args: any[]) => {
+    const ref = useRef(null as unknown as CommandReturn<T>);
     const signal = useSignal();
+
+    const fetchFn = async () => {
+        const _args = args || [];
+
+        const rq = await cli.execute(new command(..._args))
+        ref.current = { ...rq, _refresh: fetchFn };
+        signal();
+    }
 
     useEffect(() => {
         ref.current = { status: 102 };
 
-        const fn = async () => {
-            const _args = args || [];
-
-            const rq = await cli.execute(new command(..._args))
-            ref.current = rq;
-            signal();
-        }
-        fn();
+        fetchFn();
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    return ref.current;
+    return ref.current as CommandReturn<T>;
 }
 
 /**
@@ -42,14 +44,13 @@ export const useDispatchCommand = () => {
 
     if (ref.current === null) {
 
-        const fn = async (command: any, ...args: any[]) => {
+        ref.current = async (command: any, ...args: any[]) => {
             const _args = args || [];
 
             const rq = await cli.execute(new command(..._args))
             signal();
             return rq;
         }
-        ref.current = (command: any, ...args: any[]) => fn(command, ...args);
     }
 
     return ref.current;

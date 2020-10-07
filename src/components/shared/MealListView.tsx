@@ -1,41 +1,58 @@
-import React from 'react';
+import { useNavigation } from '@react-navigation/native';
+import React, { useEffect } from 'react';
 import {
     StyleSheet,
     View,
     Text,
+    ActivityIndicator
 } from 'react-native';
-
-import {
-    Colors,
-} from 'react-native/Libraries/NewAppScreen';
 import { MealList } from '../../api/commands';
 import { useCommand } from '../../api/hooks';
 import { isLoaded } from '../../api/utils';
 import { IMeal } from '../../types/meal';
 import { useForkedState } from '../../utils/hooks/general';
+import theme from '../../utils/theme';
+import moment from "moment"
 
 const MealListView = () => {
+    const navigation = useNavigation();
     const mealsRequest = useCommand(MealList)
-    const [meals] = useForkedState<typeof mealsRequest, IMeal>(rq => isLoaded(rq) ? rq.data : null, mealsRequest);
+    const [meals, setMeals] = useForkedState(rq => isLoaded(rq) ? rq.data : null, mealsRequest) as [IMeal[] | null, (value: IMeal[] | null) => void];
+
+    useEffect(() => {
+        const handleRefresh = () => {
+            if (mealsRequest?._refresh) {
+                setMeals(null);
+                mealsRequest._refresh()
+            }
+        }
+
+        const focusListener = navigation.addListener("focus", handleRefresh);
+        return focusListener;
+    }, [navigation]);
+
+    if (meals === null)
+        return <ActivityIndicator size={36} color={theme.palette.primary} />
+
 
     return (
         <>
             <View style={styles.sectionContainer}>
                 {
                     meals &&
-                    meals.sort(sortByDate).map((meal: IMeal) => <SingleMealItem {...meal} />)
+                    meals.sort(sortByDate).map((meal) => <SingleMealItem key={meal.id} {...meal} />)
                 }
             </View>
         </>
     );
 };
 
-const SingleMealItem = (props: IMeal) => {
+const SingleMealItem = (props: IMeal & { key: string }) => {
 
     return <View style={styles.flex}>
-        <Text>{props.amount}</Text>
-        <Text>{props.author.name}</Text>
-        <Text>{new Date(props.timestamp).toDateString()}</Text>
+        <Text style={{ flex: 2 }}>{props.amount}</Text>
+        <Text style={{ flex: 2 }}>{props.author.name}</Text>
+        <Text style={{ flex: 2 }}>{moment(props.timestamp).fromNow()}</Text>
     </View>
 }
 
@@ -46,42 +63,6 @@ const sortByDate = (a: IMeal, b: IMeal) => {
 }
 
 const styles = StyleSheet.create({
-    scrollView: {
-        backgroundColor: Colors.lighter,
-    },
-    engine: {
-        position: 'absolute',
-        right: 0,
-    },
-    body: {
-        backgroundColor: Colors.white,
-    },
-    sectionContainer: {
-        marginTop: 32,
-        paddingHorizontal: 24,
-    },
-    sectionTitle: {
-        fontSize: 24,
-        fontWeight: '600',
-        color: Colors.black,
-    },
-    sectionDescription: {
-        marginTop: 8,
-        fontSize: 18,
-        fontWeight: '400',
-        color: Colors.dark,
-    },
-    highlight: {
-        fontWeight: '700',
-    },
-    footer: {
-        color: Colors.dark,
-        fontSize: 12,
-        fontWeight: '600',
-        padding: 4,
-        paddingRight: 12,
-        textAlign: 'right',
-    },
     flex: {
         display: "flex",
         flexDirection: "row",
